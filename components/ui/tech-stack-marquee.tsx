@@ -24,6 +24,9 @@ import {
     SiPostman,
     SiTurborepo,
 } from 'react-icons/si';
+import { GiCloudRing } from "react-icons/gi";
+import { FaAws } from "react-icons/fa";
+import { SiRazorpay } from "react-icons/si";
 import { Badge } from './badge';
 import { Marquee } from '../magicui/marquee';
 import { Plug } from 'lucide-react';
@@ -36,12 +39,15 @@ export const techStack = [
     { name: 'C++', icon: <SiCplusplus className="text-blue-600" /> },
     { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-800 dark:text-blue-200"  /> },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
+    {name : 'AWS', icon : <FaAws className='text-yellow-400'/>},
     { name: 'React', icon: <SiReact className="text-sky-400" /> },
     { name: 'Redux', icon: <SiRedux className="text-[#764ABC] dark:text-purple-300" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
     { name: 'Node.js', icon: <SiNodedotjs className="text-green-500" /> },
     { name: 'Express.js', icon: <SiExpress className="text-black dark:text-white" /> },
     { name: 'Prisma', icon: <SiPrisma className="text-indigo-400" /> },
+    {name : 'Convex', icon : <GiCloudRing className='text-orange-500 dark:text-white'/>},
+    {name : 'Razorpay' , icon : <SiRazorpay  className='text-blue-500'/>},
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
     { name: 'ShadCN', icon: <SiShadcnui className="text-violet-400" /> },
     { name: 'Postman', icon: <SiPostman className="text-orange-500" /> },
