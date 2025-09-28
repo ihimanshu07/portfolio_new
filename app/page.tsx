@@ -20,15 +20,15 @@ export default function Home() {
     <>
     
       <div className=''>
-        <div id='navbar+title' className=' flex flex-col w-full gap-5.5 sm:gap-5 max-w-xl lowercase'>
+        <div id='navbar+title' className=' flex flex-col w-full gap-5.5 sm:gap-5 max-w-xl '>
 
           {/* NAV  */}
           <Header />
 
           {/* TITLE */}
           <h1 className='w-full text-start text-[min(12vw,72px)] font-medium leading-[0.9] tracking-[-2px] sm:tracking-[-4px]'>
-            hey, i&#39;m Vishal<br />
-            <span className='text-gray-500 dark:text-gray-400'>developer builder</span>
+           <span className=' text-4xl'> こんにちわ </span>, <br /> I&#39;m Vishal<br />
+            {/* <span className='text-gray-500 dark:text-gray-400 text-6xl '>Web & Blockchain</span> */}
           </h1>
 
           <Badge variant="outline" className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function Home() {
 
             {/* description  */}
             <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
-              I&rsquo;m a 19-year-old developer — disciplined, focused, and driven to build, innovate, and make great things happen.
+              24 ,<span className='text-black dark:text-white'> [ Sol/Eth , Web ] </span>Developer ;
             </section>
 
             {/* banner */}
@@ -51,7 +51,7 @@ export default function Home() {
 
             {/* projects */}
             <section className=' font-medium text-lg text-gray-700 dark:text-gray-300'>
-              i built projects like
+             Projects | OpenSource : 
               <div className=' flex flex-wrap gap-2 mt-5'>
                 {
                   products.map((product) => (
@@ -63,9 +63,9 @@ export default function Home() {
               </div>
             </section>
 
-            <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
+            {/* <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
               I am open to internships, projects, or just connecting.
-            </section>
+            </section> */}
 
             <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
               Feel free to reach out — {" "}
