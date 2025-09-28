@@ -7,6 +7,7 @@ import {
     SiCplusplus,
     SiPostgresql,
     SiMongodb,
+    SiClerk ,
     SiReact,
     SiNextdotjs,
     SiNodedotjs,
@@ -24,6 +25,9 @@ import {
     SiPostman,
     SiTurborepo,
 } from 'react-icons/si';
+import { SiLangchain, SiSqlite } from "react-icons/si";
+import { RiGeminiFill } from "react-icons/ri";
+import { FaFacebook } from "react-icons/fa";
 import { GiCloudRing } from "react-icons/gi";
 import { FaAws } from "react-icons/fa";
 import { SiRazorpay } from "react-icons/si";
@@ -40,7 +44,12 @@ export const techStack = [
     { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-800 dark:text-blue-200"  /> },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
     {name : 'AWS', icon : <FaAws className='text-yellow-400'/>},
+    {name : "Gemini" , icon :<RiGeminiFill className='text-blue-500'/> },
+    {name : "SQLite" , icon : <SiSqlite className='text-blue-600'/>},
+    {name : "Faiss Vector Store" , icon : <FaFacebook className='text-blue-500'/>},
+    {name : "Langchain", icon : <SiLangchain className='text-green-400' />},
     { name: 'React', icon: <SiReact className="text-sky-400" /> },
+    {name : "Clerk" , icon : <SiClerk className='text-gray-300'/>},
     { name: 'Redux', icon: <SiRedux className="text-[#764ABC] dark:text-purple-300" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
     { name: 'Node.js', icon: <SiNodedotjs className="text-green-500" /> },

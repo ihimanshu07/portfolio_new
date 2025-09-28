@@ -287,30 +287,37 @@ export const products = [
       "TypeScript",
       "Zod",
     ],
-    status: ["Building"],
+    status: ["In Progress"],
     },
     {
     id: 2,
-    name: "Cafe",
-    liveurl: "https://kindness-cafe.vercel.app/",
-    githuburl: "https://github.com/VineshRajkumar/KindnessCafe.com",
+    name: "AxiomDocs",
+   
+    githuburl: "https://github.com/Vishal-K-988/AxiomDocs.git",
+    docs  :"https://vishalk988.notion.site/Axiom-Docs-Documentation-1fd8a65a485180b69baac4f700a7682e?pvs=4", 
     description:
-      "KindnessCafe.com is a platform similar to Buy Me a Coffee, where users can support their favorite creators by donating money. The website features user authentication, payment processing via Razorpay, and a personalized dashboard for each user.",
-    popupImage: "/products/kindnesscafePopup.png",
-    image: "/products/kindnesscafe.jpg",
+      "AxiomDocs is a full-stack AI platform that allows users to upload PDF documents and engage in real-time, semantic conversations with their content using Google Gemini AI and LangChain.",
+      // thumbnail
+    popupImage: "/products/axiomsdocsThumbnail.png",
+    // icon
+    image: "/products/axiomsdocsIcon.png",
     tech: [
-      "JavaScript",
-      "MongoDB",
+      
+      "Gemini",
+      "Langchain",
       "Next.js",
       "NextAuth.js",
-      "Razorpay",
+      "Clerk",
+      "AWS",
+      "Faiss Vector Store",
       "Tailwind CSS",
+      "SQLite"
     ],
-    status: ["Completed", "UI Redesign", "In Progress"],
+    status: ["Completed", "RAG Chatbot"],
     },
     {
     id: 3,
-    name: "AlertMe",
+    name: "Imagemorph",
     // liveurl: "",
     githuburl:
       "https://github.com/VineshRajkumar/TEAM_ACCELERATE_SIH_SCRAPER_2024",

@@ -1,5 +1,6 @@
 import { products, socialLinks } from '@/app/data/index';
-import CurrentTime from '@/components/misc/current-time';
+
+
 // import AvailabilityStatus from '@/components/misc/current-time';
 import Header from '@/components/misc/headers';
 import ProjectPopup from '@/components/misc/popup';
@@ -55,7 +56,7 @@ export default function Home() {
                 {
                   products.map((product) => (
                     <div key={product.id} className='' >
-                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} description={product.description} tech={product.tech} status={product.status} />
+                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs= {product.docs} description={product.description} tech={product.tech} status={product.status} />
                     </div>
                   ))
                 }
@@ -98,7 +99,12 @@ export default function Home() {
                 ))
               }
             </div>
-            <CurrentTime />
+          
+
+            <div className='text-[13px] max-[410px]:text-[15px] text-gray-700 dark:text-gray-400 normal-case'>
+              Ladakh 
+            </div>
+            
           </footer>
         </div>
       </div>
