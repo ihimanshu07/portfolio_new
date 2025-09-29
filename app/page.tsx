@@ -5,6 +5,8 @@ import { products, socialLinks } from '@/app/data/index';
 import Header from '@/components/misc/headers';
 import ProjectPopup from '@/components/misc/popup';
 // import BaseHead from '@/components/seo/basehead';
+
+
 import { Badge } from '@/components/ui/badge';
 import TechStackMarquee from '@/components/ui/tech-stack-marquee';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -56,7 +58,7 @@ export default function Home() {
                 {
                   products.map((product) => (
                     <div key={product.id} className='' >
-                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs= {product.docs} description={product.description} tech={product.tech} status={product.status} />
+                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs= {product.docs} video = {product.video} description={product.description} tech={product.tech} status={product.status} />
                     </div>
                   ))
                 }
@@ -67,14 +69,14 @@ export default function Home() {
               I am open to internships, projects, or just connecting.
             </section> */}
 
-            <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
-              Feel free to reach out — {" "}
+            <section className='font-medium text-md text-gray-700 dark:text-gray-400'>
+              
               <Tooltip>
                 <Link
                   href="mailto:vishalkumargeed@gmail.com?subject=Let's%20chat&body=Hey%20Vishal,%20I%20saw%20your%20portfolio%20and%20it%20was%20quite%20good"
                   target='_blank'
                 >
-                  <TooltipTrigger className='underline underline-offset-2'>send a email</TooltipTrigger>
+                  <TooltipTrigger className=''>vishalkumargeed@gmail.com</TooltipTrigger>
                   <TooltipContent> <p>vishalkumargeed@gmail.com</p> </TooltipContent>
                 </Link>
               </Tooltip>
@@ -90,19 +92,39 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               {
                 socialLinks.map((link) => (
-                  <Link
+                  
+                  <Tooltip key={link.label}>
+                       <Link
                     key={link.url}
                     href={link.url}
-                    className='text-lg font-medium text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:underline underline-offset-2'>
-                    {link.label}
+                    className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'>
+                      <TooltipTrigger>
+                          {link.label}
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{link.url}</p>
+                      </TooltipContent>
+                     
                   </Link>
+                  </Tooltip>
+
+                 
                 ))
               }
             </div>
           
 
-            <div className='text-[13px] max-[410px]:text-[15px] text-gray-700 dark:text-gray-400 normal-case'>
-              Ladakh 
+            <div className='text-[15px] max-[410px]:text-[15px] text-gray-700 dark:text-gray-300 normal-case  hover:text-gray-900 dark:hover:text-gray-100 hover:underline '>
+                <Tooltip>
+                <Link
+                  href="https://www.incredibleindia.gov.in/en/ladakh"
+                  target='_blank'
+                >
+                  <TooltipTrigger className=''>Ladakh</TooltipTrigger>
+                  <TooltipContent> <p>Ladakh</p> </TooltipContent>
+                </Link>
+              </Tooltip>
+          
             </div>
             
           </footer>

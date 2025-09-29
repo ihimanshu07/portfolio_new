@@ -267,6 +267,7 @@ export const products = [
     name: "Worksuit",
     liveurl: "https://worksuit.in", 
     githuburl: "https://github.com/Vishal-K-988/worksuit.git",  
+    video  : "https://www.youtube.com/watch?v=IgwpWnO-Rw0&feature=youtu.be",
     description:
       "Worksuit is a robust client-freelancer platform designed to streamline project workflows with real-time communication, progress tracking, and integrated secure document/contract signing. It also integrates di obust file management via AWS S3.",
     // thumbnail                
@@ -292,7 +293,7 @@ export const products = [
     {
     id: 2,
     name: "AxiomDocs",
-   
+      video : "https://x.com/vishalctx/status/1927045403716821285", 
     githuburl: "https://github.com/Vishal-K-988/AxiomDocs.git",
     docs  :"https://vishalk988.notion.site/Axiom-Docs-Documentation-1fd8a65a485180b69baac4f700a7682e?pvs=4", 
     description:
@@ -378,4 +379,5 @@ export const socialLinks = [
     label: "@linkedin",
     url: "https://www.linkedin.com/in/vishal-k-26-05-2001/",
   },
+ 
 ];

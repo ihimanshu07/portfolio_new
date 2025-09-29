@@ -11,7 +11,7 @@ import {
   DialogTrigger
 } from "@/components/ui/dialog";
 // import { Button } from "@/components/ui/button";
-import { ExternalLink, Github , Book } from "lucide-react";
+import { ExternalLink, Github , Book, Youtube  } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { techStack } from "../ui/tech-stack-marquee";
@@ -21,7 +21,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Skeleton } from "../ui/skeleton";
 
-export default function ProjectPopup({ name, liveurl, githuburl, docs,  image, popupImage, description, tech = [], status = ["In Progress"] }: { name: string, liveurl?: string, githuburl?: string, docs ? : string ,  image: string, popupImage: string, description: string, tech?: string[], status?: string[] }) {
+export default function ProjectPopup({ name, liveurl, githuburl, docs, video ,  image, popupImage, description, tech = [], status = ["In Progress"] }: { name: string, liveurl?: string, githuburl?: string, docs ? : string , video?: string,   image: string, popupImage: string, description: string, tech?: string[], status?: string[] }) {
   const [loading, setLoading] = useState(true);
   return (
 
@@ -133,7 +133,7 @@ export default function ProjectPopup({ name, liveurl, githuburl, docs,  image, p
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github className="h-4 w-4" />
+            <Github className="h-4 w-4" /> Github
           
           </Link> : ''}
 
@@ -142,7 +142,18 @@ export default function ProjectPopup({ name, liveurl, githuburl, docs,  image, p
         className="flex items-center gap-1 text-sm font-medium underline underline-offset-2"
             target="_blank"
             rel="noopener noreferrer"
-          > <Book className="h-4 w-4"/> </Link> : ''}
+          > <Book className="h-4 w-4"/> Docs </Link> : ''}
+
+            {/* live video  */}
+            {video ? <Link 
+            href= {video} 
+            className="flex items-center gap-1 text-sm font-medium underline underline-offset-2" 
+            target="_blank" 
+             rel="noopener noreferrer"
+            > 
+            <Youtube className="h-4 w-4"/> Video
+            </Link> : ""}
+
         </div>
       </DialogContent>
 
