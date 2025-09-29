@@ -57,36 +57,7 @@ export function Steam() {
 
                     
                     
-                    {/* likes */}
-                    {/* <button
-                        className={cn(
-                            'flex items-center justify-between w-full hover:text-pink-500 transition-colors',
-                            liked && 'text-pink-500'
-                        )}
-                        onClick={handleLike}
-                    >
-                        <div className="flex items-center gap-2">
-                            <Heart
-                                className="w-5 h-5"
-                                fill={liked ? 'currentColor' : 'none'}
-                            />
-                            <span>{likes} likes</span>
-                        </div>
-                    </button> */}
-                    
-                    {/* star */}
-                    {/* <Link
-                        href="https://github.com/VineshRajkumar/my-portfolio"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full hover:text-yellow-500 transition-colors"
-                    >
-                        <div className="flex items-center gap-2">
-                            <Star className="w-5 h-5" />
-                            <span>Star on GitHub</span>
-                        </div>
-                    </Link> */}
-
+                
 
 
                 </div>

@@ -1,3 +1,5 @@
+import { Cpu } from 'lucide-react';
+
 export interface MenuItem {
   label: string;
   url: string;
@@ -23,29 +25,21 @@ export const menuItems: MenuItem[] = [
 ];
 
 export const title = "Vishal";
-export const description =
-  "I build modern apps, design clean UIs, and love turning ideas into reality.";
+export const description ="24 , [ Sol/Eth , Web ] Developer ;";
 export const image = "/images/ogimage.png";
 export const url = `${process.env.NEXT_PUBLIC_SITE_URL}`;
 
 export const ogImage = {
-  src: "/images/ogimage.png",
+  src: "/images/preview.png",
   alt: "Vishal",
 };
 
 export const seo = {
   twitterHandle: "@vishalctx",
 
-  /*
-  Prompt :- 
-  	Act as an SEO expert. I need help developing a list of relevant, high-volume, and low-competition keywords for my portfolio website. Please provide keywords, including long-tail variations, and group them by topic. Also, suggest related questions users might search for.
-	Give me all those keywords which users might search and which will rank my portfolio above all when my name is searched 
-	i am giving you some information about me 
-	[INFO HERE]
-	Please generate don't worry about the words limit i need my website to rank even if the just the word "vinesh" is searched
-  */
+ 
   keywords: [
-    // 🔥 Personal Branding: Vishal 
+    //  Personal Branding: Vishal 
     "vishal",
     "vishal portfolio",
     "vishal developer",
@@ -64,7 +58,7 @@ export const seo = {
     "vishal frontend developer",
     "vishal backend developer",
 
-    // 🔥 Personal Branding
+    //  Personal Branding
     "vishal kumar geed ",
     "vishal kumar geed  portfolio",
     "vishal kumar geed  developer",
@@ -82,7 +76,7 @@ export const seo = {
     "vishal kumar geed  frontend developer",
     "vishal kumar geed  backend developer",
 
-    // 🔥 Personal Branding
+    //  Personal Branding
     "vishal kumar geed",
     "vishal kumar geed portfolio",
     "vishal kumar geed developer",
@@ -100,7 +94,7 @@ export const seo = {
     "vishal kumar geed backend developer",
     "vishal kumar geed open to work",
 
-    // 🔥 Personal Branding:
+    //  Personal Branding:
     "vishalkumargeed",
     "vishalkumargeed portfolio",
     "vishalkumargeed developer",
@@ -115,14 +109,14 @@ export const seo = {
     "vishalkumargeed backend developer",
     "vishalkumargeed open to work",
 
-    // ❓ Personal Questions (across all name variations)
+    //  Personal Questions (across all name variations)
     "who is vishal developer",
     "who is vishal kumar geed developer",
     "who is vishal kumar developer",
     "who is vishalkumargeed developer",
     "where can I see vishal's projects",
-    "where can I see vishal raj’s projects",
-    "where can I see vishal rajkumar’s projects",
+    "where can I see vishal  projects",
+    "where can I see vishal kumar's projects",
     "how to contact vishal",
     "how to contact vishal kumar geed",
     "how to contact vishal kumar geed",
@@ -131,7 +125,7 @@ export const seo = {
     "what tech stack does vishal kunar geed use",
     "what tech stack does vishal kumar geed use",
 
-    // 💼 Internship & Job Keywords
+    //  Internship & Job Keywords
     "web developer open for internship",
     "full stack developer seeking internship",
     "frontend developer open to work",
@@ -146,12 +140,12 @@ export const seo = {
     "open source contributor india",
     "developer open for collaboration",
 
-    // ❓ Internship Questions
+    //  Internship Questions
     "where can I find web dev interns in India",
     "how to hire a full stack intern",
     "who is a good full stack intern in pune",
 
-    // 🛠️ Tech Stack Keywords
+    //  Tech Stack Keywords
     "nextjs developer portfolio",
     "full stack developer using nextjs",
     "tailwind css portfolio",
@@ -288,7 +282,7 @@ export const products = [
       "TypeScript",
       "Zod",
     ],
-    status: ["In Progress"],
+    status: ["In Progress "],
     },
     {
     id: 2,
@@ -318,66 +312,76 @@ export const products = [
     },
     {
     id: 3,
-    name: "Imagemorph",
+    name: "PixelFlow",
     // liveurl: "",
     githuburl:
-      "https://github.com/VineshRajkumar/TEAM_ACCELERATE_SIH_SCRAPER_2024",
-    description:
-      "This project was developed as part of Smart India Hackathon (SIH) 2024, tackling Problem Statement 1676.\nOur goal was to create a near real-time vulnerability monitoring system that detects and alerts users about critical vulnerabilities in OEM equipment (IT & OT) faster than the National Vulnerability Database (NVD).\nThis project deepened our understanding of cybersecurity, AI-based threat detection, and large-scale web scraping.",
-    popupImage: "/products/alertmePopup.png",
-    image: "/products/alertme.png",
-    tech: ["Node.js", "Express.js", "PostgreSQL", "Puppeteer"],
-    status: ["Prototype"],
-  },
-  {
-    id: 4,
-    name: "Brown",
-    liveurl: "https://vineshrajkumar.github.io/Brown/",
-    githuburl: "https://github.com/VineshRajkumar/Brown",
-    description:
-      "The Brown Blog Site is a blogging platform where users can sign up, write posts, and manage their content with ease. It offers a clean, responsive interface for reading and publishing blogs. Ideal for creators looking to share ideas and manage posts effortlessly.",
-    popupImage: "/products/brownPopup.png",
-    image: "/products/brown.png",
-    tech: ["React", "Redux", "Tailwind CSS", "ShadCN"],
+      "https://github.com/Vishal-K-988/Image-processing-using-serverless-Cloud-.git",
+    description: `Developed a serverless application for efficient image processing using AWS services like S3, IAM, CloudWatch, API Gateway, and Lambda, with the core logic implemented in Javascript.
+User can upload their picture and select one of the 3 options: resize, reshape, or crop online. No need to download any kind of editing software; all operations are handled serverlessly over AWS cloud.
+
+Workflow:
+1. User uploads their image.
+2. Image is stored in an S3 bucket [origin].
+3. Lambda function triggers whenever an image is uploaded to the S3 bucket.
+4. The processed image is stored in an S3 bucket [destination].
+5. With the help of AWS SDK, the processed image is shown back to the user via API.
+`,
+    popupImage: "/products/serverless.png",
+    image: "/products/serverlessIcon.png",
+    tech: ["Node.js", "AWS", "React" ],
     status: ["Completed"],
   },
   {
-    id: 5,
-    name: "MystryMsg",
-    liveurl: "https://mystery-message-net.vercel.app/",
-    githuburl: "https://github.com/VineshRajkumar/MysteryMessage",
+    id: 4,
+    name: "Protochain",
+    liveurl: "",
+    githuburl: "https://github.com/Vishal-K-988/ProtoChain.git",
     description:
-      "Mystery Message App lets users collect anonymous feedback through a secure, OTP-verified sign-up. Each user gets a unique public link to receive messages without revealing the sender's identity. Perfect for creators, professionals, and teams seeking honest, private feedback.",
-    popupImage: "/products/mystrymsgPopup.png",
-    image: "/products/mystrymsg.png",
-    tech: [
-      "Next.js",
-      "MongoDB",
-      "NextAuth.js",
-      "Zod",
-      "ShadCN",
-      "Tailwind CSS",
-    ],
-    status: ["Completed", "UI Redesign", "In Progress"],
-  },
-];
+      "Protochain is a game-changer for creating smart contracts. This decentralized app uses advanced AI, specifically the Gemini-2.0-flash LLM, to let you build intricate smart contracts just by describing what you want in plain language. It's incredibly efficient, cutting down the time you'd spend coding by a huge 70%! Protochain even won Electrothon 7.0, showing off its innovative approach. Plus, it's super flexible and secure – you can deploy your contracts across Aptos, Polygon, and Ethereum, and it works seamlessly with popular crypto wallets like Petra and MetaMask. Basically, Protochain makes creating and deploying smart contracts much easier and more versatile for everyone.",
 
-export const socialLinks = [
-  {
-    label: "@x",
-    url: "https://x.com/vishalctx",
-  },
-  // {
-  //   label: "#resume",
-  //   url: "https://drive.google.com/file/d/1QD6S8-6-dBYudLATb98ZsP_jIMF9R8m5/view?usp=sharing",
-  // },
-  {
-    label: "@github",
-    url: "https://github.com/vishal-k-988",
+    popupImage: "/products/protochain.png",
+    image: "/products/cpu.png",
+    tech: ["Gemini", "Metamask", "Etherium", "React" , "ShadCN"],
+    status: ["Completed" , "Electrothon - 7" , "Gemini Track Prize "],
   },
   {
-    label: "@linkedin",
-    url: "https://www.linkedin.com/in/vishal-k-26-05-2001/",
+    id: 5,
+    name: "Nodejs",
+    liveurl: "https://nodejs.org/en",
+    githuburl: "https://github.com/nodejs/nodejs.org/pull/7750#issue-3065327752",
+    description:
+      "  Moved hardcoded OS, installation methods, and package manager labels from downloadUtils.tsx to a separate downloadConstants.json file for better maintainability. Updated the utility to import and use data from JSON without changing existing behavior.",
+    popupImage: "/products/nodejs.png",
+    image: "/products/nodejsIcon.png",
+    tech: [
+      "Node.js",
+      "JavaScript",
+     
+    ],
+    status: ["Merged",],
   },
- 
+  {
+    id: 6,
+    name: "Brie ",
+    liveurl: "https://brie.io/",
+    docs : "https://www.notion.so/vishalk988/Brie-Contribution-20e8a65a4851814897cdf9764e564aba?source=copy_link",
+    githuburl: "https://github.com/briehq/brie-extension/pulls?q=is%3Apr+is%3Aclosed+author%3AVishal-K-988",
+    description:
+      `- Reduced local system resource usage during the build and compilation process.
+- Enabled specific limits for developers in development mode.
+- Added device and OS version tracking for both Chromium and non-Chromium browsers.
+- Implemented support for dark mode.`,
+    popupImage: "/products/Brie.png",
+    image: "/products/BrieIcon.png",
+    tech: [
+      "Node.js",
+      "Next.Js",
+      "Turborepo", 
+      "Typescript",
+      "Vite", 
+      "Polyfills"
+
+    ],
+    status: ["Merged",],
+  },
 ];

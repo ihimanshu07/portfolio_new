@@ -17,9 +17,9 @@ import {
     SiAuth0,
     SiRedux,
     SiZod,
-
+    SiSolana,
     // SiVercel,
-    SiPuppeteer,
+   SiKubernetes,
     // SiGithub,
     SiShadcnui,
     SiPostman,
@@ -30,20 +30,31 @@ import { RiGeminiFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 import { GiCloudRing } from "react-icons/gi";
 import { FaAws } from "react-icons/fa";
+import { GiFoxHead } from "react-icons/gi";
+import { GiCrossedChains } from "react-icons/gi";
 import { SiRazorpay } from "react-icons/si";
 import { Badge } from './badge';
 import { Marquee } from '../magicui/marquee';
 import { Plug } from 'lucide-react';
+import { SiVite } from "react-icons/si";
 
 
 
 export const techStack = [
     { name: 'JavaScript', icon: <SiJavascript className="text-yellow-400" /> },
+    {name : "Vite" , icon : <SiVite className='text-violet-500'/>},
+    
+      { name: 'Polyfills', icon: <SiJavascript className="text-yellow-400" /> },
     { name: 'TypeScript', icon: <SiTypescript className="text-blue-500" /> },
+      {name : 'Kubernetes', icon : <SiKubernetes className='text-blue-400'/>},
     { name: 'C++', icon: <SiCplusplus className="text-blue-600" /> },
     { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-800 dark:text-blue-200"  /> },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
+    
     {name : 'AWS', icon : <FaAws className='text-yellow-400'/>},
+    {name : "Solana" , icon : <SiSolana  className='text-violet-600'/>},
+    {name : "Etherium" , icon : <GiCrossedChains className='text-violet-500'/>},
+    {name : "Metamask" , icon : <GiFoxHead className='text-yellow-400'/>},
     {name : "Gemini" , icon :<RiGeminiFill className='text-blue-500'/> },
     {name : "SQLite" , icon : <SiSqlite className='text-blue-600'/>},
     {name : "Faiss Vector Store" , icon : <FaFacebook className='text-blue-500'/>},
@@ -62,7 +73,7 @@ export const techStack = [
     { name: 'Postman', icon: <SiPostman className="text-orange-500" /> },
     { name: 'NextAuth.js', icon: <SiAuth0 className="text-orange-500" /> },
     { name: 'Zod', icon: <SiZod className="text-green-400" /> },
-    { name: 'Puppeteer', icon: <SiPuppeteer className="text-black dark:text-white" /> },
+    
     { name: 'Turborepo', icon: <SiTurborepo className="text-[#EF4444] dark:text-[#f87171]" /> },
     { name: 'WebSocket', icon: <Plug className="text-blue-500 dark:text-blue-400" /> }
 ];

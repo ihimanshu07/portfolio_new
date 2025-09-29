@@ -6,9 +6,9 @@ const StatusBadge = ({status}:{status:string}) => {
     <div>
       <Badge variant="secondary" className="flex  items-center gap-2 w-fit mt-1">
             <span
-              className={`relative flex h-2 w-2 rounded-full ${status === "Completed"
+              className={`relative flex h-2 w-2 rounded-full ${status === "Completed" || "Merged "
                   ? "bg-green-500"
-                  : status === "Prototype"
+                  : status === "Working"
                     ? "bg-yellow-400"
                     : status === "UI Redesign"
                       ? "bg-blue-500"
@@ -18,7 +18,7 @@ const StatusBadge = ({status}:{status:string}) => {
               <span
                 className={`absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping ${status === "Completed"
                     ? "bg-green-400"
-                    : status === "Prototype"
+                    : status === "Working"
                       ? "bg-yellow-300"
                       : status === "UI Redesign"
                         ? "bg-blue-400"

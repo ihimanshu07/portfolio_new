@@ -78,7 +78,7 @@ export function AdditionalInfoDialog() {
                     
                     {/* star */}
                     <Link
-                        href="https://github.com/VineshRajkumar/my-portfolio"
+                        href="https://github.com/vishal-k-988"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-between w-full hover:text-yellow-500 transition-colors"
@@ -89,7 +89,7 @@ export function AdditionalInfoDialog() {
                         </div>
                     </Link>
                 </div>
-            </DialogContent>
+            </DialogContent> 
         </Dialog>
     )
 }
