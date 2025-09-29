@@ -4,6 +4,9 @@ import { products, socialLinks } from '@/app/data/index';
 // import AvailabilityStatus from '@/components/misc/current-time';
 import Header from '@/components/misc/headers';
 import ProjectPopup from '@/components/misc/popup';
+import { FaGithub } from "react-icons/fa6";
+import { SiGoogledocs } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 // import BaseHead from '@/components/seo/basehead';
 
 
@@ -89,28 +92,38 @@ export default function Home() {
           <footer
             id='social-links'
             className='flex max-[410px]:flex-col max-[410px]:gap-3 justify-between items-center '>
-            <div className="flex flex-wrap gap-4">
-              {
-                socialLinks.map((link) => (
-                  
-                  <Tooltip key={link.label}>
-                       <Link
-                    key={link.url}
-                    href={link.url}
-                    className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'>
-                      <TooltipTrigger>
-                          {link.label}
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{link.url}</p>
-                      </TooltipContent>
-                     
-                  </Link>
-                  </Tooltip>
+            <div className="flex flex-wrap gap-5">
 
-                 
-                ))
-              }
+              {/* github  */}
+              <Link 
+              href={"https://github.com/vishal-k-988"}
+              target='_blank'
+              className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
+              > <FaGithub className='w-6 h-6 text-black dark:text-white'/>
+
+              </Link>
+
+              {/* twitter  */}
+               <Link 
+              href={"https://x.com/vishalctx"}
+              target='_blank'
+              className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
+              > <FaXTwitter className='w-6 h-6 text-black dark:text-white'/>
+
+              </Link>
+
+              {/* resume  */}
+               <Link 
+              href={"https://drive.google.com/file/d/1QD6S8-6-dBYudLATb98ZsP_jIMF9R8m5/view?usp=sharing"}
+              target='_blank'
+              className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
+              > <SiGoogledocs className='w-6 h-6 text-black dark:text-white'/>
+
+              </Link>
+
+
+
+             
             </div>
           
 

@@ -367,10 +367,10 @@ export const socialLinks = [
     label: "@x",
     url: "https://x.com/vishalctx",
   },
-  {
-    label: "#resume",
-    url: "https://drive.google.com/drive/folders/1VGypChlFNmYxKn1_nAL6PpZ2YOXN1lZz",
-  },
+  // {
+  //   label: "#resume",
+  //   url: "https://drive.google.com/file/d/1QD6S8-6-dBYudLATb98ZsP_jIMF9R8m5/view?usp=sharing",
+  // },
   {
     label: "@github",
     url: "https://github.com/vishal-k-988",
