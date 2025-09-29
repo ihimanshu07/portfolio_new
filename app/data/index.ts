@@ -26,7 +26,7 @@ export const menuItems: MenuItem[] = [
 
 export const title = "Vishal";
 export const description ="24 , [ Sol/Eth , Web ] Developer ;";
-export const image = "/images/ogimage.png";
+export const image = "/images/preview.png";
 export const url = `${process.env.NEXT_PUBLIC_SITE_URL}`;
 
 export const ogImage = {
