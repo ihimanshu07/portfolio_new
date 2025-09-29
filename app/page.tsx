@@ -1,4 +1,4 @@
-import { products, socialLinks } from '@/app/data/index';
+import { products } from '@/app/data/index';
 
 
 // import AvailabilityStatus from '@/components/misc/current-time';

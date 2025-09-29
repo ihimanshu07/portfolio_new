@@ -3,6 +3,7 @@ import { ThemeSwitcher } from './theme-switcher'
 import { menuItems } from '@/app/data/index';
 import { HeaderLink } from './header-link';
 import { AdditionalInfoDialog } from './additional-info-dialog';
+import { Steam } from './steam';
 
 const Header = () => {
     return (
@@ -15,8 +16,10 @@ const Header = () => {
                         ))
                     }
                 </div>
-                <div>
+                <div >
+                    <Steam/>
                     <AdditionalInfoDialog/>
+                    
                     <ThemeSwitcher/>
                 </div>
             </div>
