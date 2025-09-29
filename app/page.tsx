@@ -32,7 +32,7 @@ export default function Home() {
 
           {/* TITLE */}
           <h1 className='w-full text-start text-[min(12vw,72px)] font-medium leading-[0.9] tracking-[-2px] sm:tracking-[-4px]'>
-           <span className=' text-4xl'> こんにちわ </span>, <br /> I&#39;m Vishal<br />
+           <span className=' text-4xl'> こんにちわ </span> <br /> I&#39;m Vishal<br />
             {/* <span className='text-gray-500 dark:text-gray-400 text-6xl '>Web & Blockchain</span> */}
           </h1>
 
