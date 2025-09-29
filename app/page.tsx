@@ -72,7 +72,7 @@ export default function Home() {
               I am open to internships, projects, or just connecting.
             </section> */}
 
-            <section className='font-medium text-md text-gray-700 dark:text-gray-400'>
+            <section className='font-medium text-md text-gray-700 dark:text-gray-400 text-center md:text-left '>
               
               <Tooltip>
                 <Link
