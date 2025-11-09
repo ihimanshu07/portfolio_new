@@ -42,14 +42,14 @@ export function Steam() {
 
                    
                        <Image
-      src="/products/terrorist.jpg" 
+      src="/products/steam_dashboard.png" 
       alt="Baby don't hurt me ! "
       className=''
       width={359} 
       height={300} 
     />
     
-        <Button variant={'ghost'} size="lg" >
+        <Button variant={'ghost'} size="lg" onClick={() => window.open("https://steamcommunity.com/profiles/76561199821894546/", "_blank")} >
        <span >  Checkout  -&gt; カカシ   </span> </Button>
 
      

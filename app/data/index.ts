@@ -384,4 +384,35 @@ Workflow:
     ],
     status: ["Merged",],
   },
+   {
+    id: 7,
+    name: "Catalyst",
+    liveurl: "https://zohoassignement-60051334413.catalystserverless.in",
+    docs : "https://github.com/Vishal-K-988/zoho-task-manager",
+    githuburl: "https://github.com/Vishal-K-988/zoho-task-manager",
+    description:
+      `- This was an Full Stack Developer assignment. 
+       - Features of this application are : 
+        1. User specific task : as all the task is stored in CATALYST DATA STORE and given user specific permission . 
+        2. Live Task Update 
+        3. Search for a particular task : Pending , Done , Completed! 
+        4. User Authentication  : The cool part ! Done this using their by their own HOSTED AUTHENTICATION feature. 
+
+       - Where I need to develop a task manager application using these tech stack : 
+        1. Zoho Catalyst 
+        2. Host this application via Zoho Web Hosting 
+        3. Zoho serverless Functions in order to make the REST API and create the logic for the backend. 
+        4. React Js 
+       `,
+    popupImage: "/products/catalyst.png",
+    image: "/products/catalyst-icon.png",
+    tech: [
+      "Catalyst",
+      "React",
+      "Express",
+      "Tailwind"
+
+    ],
+    status: ["Completed",],
+  },
 ];
