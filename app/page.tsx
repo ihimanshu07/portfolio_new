@@ -114,7 +114,7 @@ export default function Home() {
 
               {/* resume  */}
                <Link 
-              href={"https://drive.google.com/file/d/1QD6S8-6-dBYudLATb98ZsP_jIMF9R8m5/view?usp=sharing"}
+              href={"https://drive.google.com/file/d/1W3XSXLf-njlmPfiqqxFo-Isvedbk8VpN/view?usp=drive_link"}
               target='_blank'
               className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
               > <SiGoogledocs className='w-6 h-6 text-black dark:text-white'/>
