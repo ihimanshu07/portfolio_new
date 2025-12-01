@@ -46,7 +46,7 @@ export default function Home() {
 
             {/* description  */}
             <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
-              24 ,<span className='text-black dark:text-white'> [ Sol/Eth , Web ] </span>Developer ;
+              24 ,<span className='text-black dark:text-white'>Full Stack </span>Developer ;
             </section>
 
             {/* banner */}
