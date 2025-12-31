@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -10,11 +9,6 @@ import {
 } from '@/components/ui/dialog'
 import { FaSteam } from "react-icons/fa";
 import { Button } from '@/components/ui/button'
-import { EyeIcon, Heart, Info, Loader2Icon, Star } from 'lucide-react'
-// import { StarIcon, ThumbsUpIcon } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import * as homepageActions from '@/app/actions/homepage-action'
-import Link from 'next/link'
 import Image from 'next/image';
 
 export function Steam() {
