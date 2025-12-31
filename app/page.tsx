@@ -1,6 +1,6 @@
 'use client';
 
-import { products } from '@/app/data/index';
+import { products, type Product } from '@/app/data/index';
 import { useState } from 'react';
 
 // import AvailabilityStatus from '@/components/misc/current-time';
@@ -44,8 +44,10 @@ export default function Home() {
            <span className=' text-4xl'> こんにちは </span> <br /> I&#39;m Gaurav<br />
             <span 
               onClick={handleTextClick}
-              className={`text-gray-500 dark:text-gray-400 text-6xl cursor-pointer select-none transition-all duration-300 ${
-                isAnimating ? 'animate-bounce scale-110 text-purple-500 dark:text-purple-400' : 'hover:scale-105'
+              className={`text-gray-500 dark:text-gray-400 text-6xl cursor-pointer select-none transition-all duration-700 ease-out whitespace-nowrap inline-block ${
+                isAnimating 
+                  ? 'animate-bounce scale-110 text-purple-500 dark:text-purple-400' 
+                  : 'hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-purple-600 dark:hover:from-purple-400 dark:hover:via-pink-400 dark:hover:to-purple-400 hover:bg-[length:200%_auto] hover:font-bold hover:drop-shadow-[0_0_20px_rgba(147,51,234,0.6)] dark:hover:drop-shadow-[0_0_20px_rgba(192,132,252,0.6)] hover:animate-[shimmer_3s_ease-in-out_infinite]'
               }`}
             >
               Full Stack Developer
@@ -64,8 +66,10 @@ export default function Home() {
             <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
               24, <span 
                 onClick={handleTextClick}
-                className={`text-black dark:text-white cursor-pointer select-none transition-all duration-300 ${
-                  isAnimating ? 'animate-pulse scale-110 text-purple-600 dark:text-purple-400' : 'hover:scale-105'
+                className={`text-black dark:text-white cursor-pointer select-none transition-all duration-700 ease-out whitespace-nowrap inline-block ${
+                  isAnimating 
+                    ? 'animate-pulse scale-110 text-purple-600 dark:text-purple-400' 
+                    : 'hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-purple-600 dark:hover:from-purple-400 dark:hover:via-pink-400 dark:hover:to-purple-400 hover:bg-[length:200%_auto] hover:font-bold hover:drop-shadow-[0_0_15px_rgba(147,51,234,0.5)] dark:hover:drop-shadow-[0_0_15px_rgba(192,132,252,0.5)] hover:animate-[shimmer_3s_ease-in-out_infinite]'
                 }`}
               >
                 Full Stack Developer
@@ -82,9 +86,20 @@ export default function Home() {
              Projects | OpenSource : 
               <div className=' flex flex-wrap gap-2 mt-5'>
                 {
-                  products.map((product) => (
+                  products.map((product: Product) => (
                     <div key={product.id} className='' >
-                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs={product.docs} video={product.video} description={product.description} tech={product.tech} status={product.status} />
+                      <ProjectPopup 
+                        name={product.name} 
+                        liveurl={product.liveurl} 
+                        githuburl={product.githuburl} 
+                        image={product.image} 
+                        popupImage={product.popupImage} 
+                        docs={product.docs} 
+                        video={product.video} 
+                        description={product.description} 
+                        tech={product.tech} 
+                        status={product.status} 
+                      />
                     </div>
                   ))
                 }
