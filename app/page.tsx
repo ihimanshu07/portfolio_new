@@ -84,7 +84,7 @@ export default function Home() {
                 {
                   products.map((product) => (
                     <div key={product.id} className='' >
-                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs= {product.docs} video = {product.video} description={product.description} tech={product.tech} status={product.status} />
+                      <ProjectPopup name={product.name} liveurl={product.liveurl} githuburl={product.githuburl} image={product.image} popupImage={product.popupImage} docs={product.docs} video={product.video} description={product.description} tech={product.tech} status={product.status} />
                     </div>
                   ))
                 }

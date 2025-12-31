@@ -4,6 +4,20 @@ export interface MenuItem {
   url: string;
 }
 
+export interface Product {
+  id: number;
+  name: string;
+  liveurl: string;
+  githuburl: string;
+  description: string;
+  popupImage: string;
+  image: string;
+  tech: string[];
+  status: string[];
+  docs?: string;
+  video?: string;
+}
+
 export const menuItems: MenuItem[] = [
   // {
   // 	label: "vishal",
@@ -254,7 +268,7 @@ export const seo = {
   ],
 };
 
-export const products = [
+export const products: Product[] = [
   {
     id: 1,
     name: "Movie Finder Web Application",
