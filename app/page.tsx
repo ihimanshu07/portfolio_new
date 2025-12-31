@@ -72,7 +72,7 @@ export default function Home() {
                     : 'hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-purple-600 dark:hover:from-purple-400 dark:hover:via-pink-400 dark:hover:to-purple-400 hover:bg-[length:200%_auto] hover:font-bold hover:drop-shadow-[0_0_15px_rgba(147,51,234,0.5)] dark:hover:drop-shadow-[0_0_15px_rgba(192,132,252,0.5)] hover:animate-[shimmer_3s_ease-in-out_infinite]'
                 }`}
               >
-                Full Stack Developer
+                chasing my ikigai
               </span>
             </section>
 
