@@ -1,5 +1,7 @@
-import { products } from '@/app/data/index';
+'use client';
 
+import { products } from '@/app/data/index';
+import { useState } from 'react';
 
 // import AvailabilityStatus from '@/components/misc/current-time';
 import Header from '@/components/misc/headers';
@@ -7,6 +9,7 @@ import ProjectPopup from '@/components/misc/popup';
 import { FaGithub } from "react-icons/fa6";
 import { SiGoogledocs } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 // import BaseHead from '@/components/seo/basehead';
 
 
@@ -20,11 +23,17 @@ import Link from 'next/link';
 
 
 export default function Home() {
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handleTextClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 1000);
+  };
 
   return (
     <>
     
-      <div className=''>
+      <div className='relative z-10'>
         <div id='navbar+title' className=' flex flex-col w-full gap-5.5 sm:gap-5 max-w-xl '>
 
           {/* NAV  */}
@@ -32,8 +41,15 @@ export default function Home() {
 
           {/* TITLE */}
           <h1 className='w-full text-start text-[min(12vw,72px)] font-medium leading-[0.9] tracking-[-2px] sm:tracking-[-4px]'>
-           <span className=' text-4xl'> こんにちわ </span> <br /> I&#39;m Vishal<br />
-            {/* <span className='text-gray-500 dark:text-gray-400 text-6xl '>Web & Blockchain</span> */}
+           <span className=' text-4xl'> こんにちは </span> <br /> I&#39;m Gaurav<br />
+            <span 
+              onClick={handleTextClick}
+              className={`text-gray-500 dark:text-gray-400 text-6xl cursor-pointer select-none transition-all duration-300 ${
+                isAnimating ? 'animate-bounce scale-110 text-purple-500 dark:text-purple-400' : 'hover:scale-105'
+              }`}
+            >
+              Full Stack Developer
+            </span>
           </h1>
 
           <Badge variant="outline" className="flex items-center gap-2">
@@ -46,7 +62,14 @@ export default function Home() {
 
             {/* description  */}
             <section className='font-medium text-lg text-gray-700 dark:text-gray-400'>
-              24 ,<span className='text-black dark:text-white'>Full Stack </span>Developer ;
+              24, <span 
+                onClick={handleTextClick}
+                className={`text-black dark:text-white cursor-pointer select-none transition-all duration-300 ${
+                  isAnimating ? 'animate-pulse scale-110 text-purple-600 dark:text-purple-400' : 'hover:scale-105'
+                }`}
+              >
+                Full Stack Developer
+              </span>
             </section>
 
             {/* banner */}
@@ -76,11 +99,11 @@ export default function Home() {
               
               <Tooltip>
                 <Link
-                  href="mailto:vishalkumargeed@gmail.com?subject=Let's%20chat&body=Hey%20Vishal,%20I%20saw%20your%20portfolio%20and%20it%20was%20quite%20good"
+                  href="mailto:himanshu8115832782@gmail.com?subject=Let's%20chat&body=Hey%20Gaurav,%20I%20saw%20your%20portfolio%20and%20it%20was%20quite%20good"
                   target='_blank'
                 >
-                  <TooltipTrigger className=''>vishalkumargeed@gmail.com</TooltipTrigger>
-                  <TooltipContent> <p>vishalkumargeed@gmail.com</p> </TooltipContent>
+                  <TooltipTrigger className=''>himanshu8115832782@gmail.com</TooltipTrigger>
+                  <TooltipContent> <p>himanshu8115832782@gmail.com</p> </TooltipContent>
                 </Link>
               </Tooltip>
             </section>
@@ -96,16 +119,25 @@ export default function Home() {
 
               {/* github  */}
               <Link 
-              href={"https://github.com/vishal-k-988"}
+              href="https://github.com/ihimanshu07"
               target='_blank'
               className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
               > <FaGithub className='w-6 h-6 text-black dark:text-white'/>
 
               </Link>
 
-              {/* twitter  */}
+              {/* linkedin  */}
+              <Link 
+              href="https://www.linkedin.com/in/gauravsingh31/"
+              target='_blank'
+              className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
+              > <FaLinkedin className='w-6 h-6 text-black dark:text-white'/>
+
+              </Link>
+
+              {/* twitter/threads  */}
                <Link 
-              href={"https://x.com/vishalctx"}
+              href="https://www.threads.com/@himanshusingx"
               target='_blank'
               className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
               > <FaXTwitter className='w-6 h-6 text-black dark:text-white'/>
@@ -114,7 +146,7 @@ export default function Home() {
 
               {/* resume  */}
                <Link 
-              href={"https://drive.google.com/file/d/1HkJYNx3hlYIWnICrZcOILmYE7nXuW6iR/view?usp=sharing"}
+              href="https://drive.google.com/file/d/1Gw_45eqqV5qz0y8XvNhkFNe4O63aNiSG/view?usp=sharing"
               target='_blank'
               className='text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
               > <SiGoogledocs className='w-6 h-6 text-black dark:text-white'/>
@@ -130,11 +162,11 @@ export default function Home() {
             <div className='text-[15px] max-[410px]:text-[15px] text-gray-700 dark:text-gray-300 normal-case  hover:text-gray-900 dark:hover:text-gray-100 hover:underline '>
                 <Tooltip>
                 <Link
-                  href="https://www.incredibleindia.gov.in/en/ladakh"
+                  href="https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh"
                   target='_blank'
                 >
-                  <TooltipTrigger className=''>Ladakh</TooltipTrigger>
-                  <TooltipContent> <p>Ladakh</p> </TooltipContent>
+                  <TooltipTrigger className=''>Varanasi, Uttar Pradesh</TooltipTrigger>
+                  <TooltipContent> <p>Varanasi, Uttar Pradesh</p> </TooltipContent>
                 </Link>
               </Tooltip>
           

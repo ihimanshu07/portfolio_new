@@ -24,10 +24,10 @@ export const menuItems: MenuItem[] = [
   // },
 ];
 
-export const title = "Vishal";
-export const description ="24 , [ Sol/Eth , Web ] Developer ;";
+export const title = "Gaurav";
+export const description = "24, Full Stack Developer";
 export const image = "/images/preview.png";
-export const url = `${process.env.NEXT_PUBLIC_SITE_URL}`;
+export const url = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3000";
 
 export const ogImage = {
   src: "/images/preview.png",
@@ -258,161 +258,52 @@ export const seo = {
 export const products = [
   {
     id: 1,
-    name: "Worksuit",
-    liveurl: "https://worksuit.in", 
-    githuburl: "https://github.com/Vishal-K-988/worksuit.git",  
-    video  : "https://www.youtube.com/watch?v=IgwpWnO-Rw0&feature=youtu.be",
+    name: "Movie Finder Web Application",
+    liveurl: "https://movie-finder-two-kappa.vercel.app/",
+    githuburl: "https://github.com/ihimanshu07/Movie-Finder",
     description:
-      "Worksuit is a robust client-freelancer platform designed to streamline project workflows with real-time communication, progress tracking, and integrated secure document/contract signing. It also integrates di obust file management via AWS S3.",
-    // thumbnail                
-      popupImage: "/products/worksuitThumbnail.jpeg",
-    // logo
-    image: "/products/worksuitLogo.png",
+      "A responsive movie discovery platform with search, filtering, and favourites. Includes debounced search, lazy loading, and mobile-first UX.",
+    popupImage: "/products/movie-finder.jpg",
+    image: "/products/movie-finder.jpg",
     tech: [
-      "AWS",
-      "Convex",
-      "Express.js",
+      "React.js",
       "Next.js",
-      "Node.js",
-      "ShadCN",
-      "NextAuth.js",
-      "Razorpay",
-      "Tailwind CSS",
-      "Turborepo",
-      "TypeScript",
-      "Zod",
+      "TMDB API",
     ],
-    status: ["In Progress "],
-    },
-    {
-    id: 2,
-    name: "AxiomDocs",
-      video : "https://x.com/vishalctx/status/1927045403716821285", 
-    githuburl: "https://github.com/Vishal-K-988/AxiomDocs.git",
-    docs  :"https://vishalk988.notion.site/Axiom-Docs-Documentation-1fd8a65a485180b69baac4f700a7682e?pvs=4", 
-    description:
-      "AxiomDocs is a full-stack AI platform that allows users to upload PDF documents and engage in real-time, semantic conversations with their content using Google Gemini AI and LangChain.",
-      // thumbnail
-    popupImage: "/products/axiomsdocsThumbnail.png",
-    // icon
-    image: "/products/axiomsdocsIcon.png",
-    tech: [
-      
-      "Gemini",
-      "Langchain",
-      "Next.js",
-      "NextAuth.js",
-      "Clerk",
-      "AWS",
-      "Faiss Vector Store",
-      "Tailwind CSS",
-      "SQLite"
-    ],
-    status: ["Completed", "RAG Chatbot"],
-    },
-    {
-    id: 3,
-    name: "PixelFlow",
-    // liveurl: "",
-    githuburl:
-      "https://github.com/Vishal-K-988/Image-processing-using-serverless-Cloud-.git",
-    description: `Developed a serverless application for efficient image processing using AWS services like S3, IAM, CloudWatch, API Gateway, and Lambda, with the core logic implemented in Javascript.
-User can upload their picture and select one of the 3 options: resize, reshape, or crop online. No need to download any kind of editing software; all operations are handled serverlessly over AWS cloud.
-
-Workflow:
-1. User uploads their image.
-2. Image is stored in an S3 bucket [origin].
-3. Lambda function triggers whenever an image is uploaded to the S3 bucket.
-4. The processed image is stored in an S3 bucket [destination].
-5. With the help of AWS SDK, the processed image is shown back to the user via API.
-`,
-    popupImage: "/products/serverless.png",
-    image: "/products/serverlessIcon.png",
-    tech: ["Node.js", "AWS", "React" ],
     status: ["Completed"],
   },
   {
-    id: 4,
-    name: "Protochain",
-    liveurl: "",
-    githuburl: "https://github.com/Vishal-K-988/ProtoChain.git",
+    id: 2,
+    name: "Task Manager Application",
+    liveurl: "https://zohoassignement-60051334413.catalystserverless.in/app/",
+    githuburl: "https://github.com/ihimanshu07/Task-manager",
     description:
-      "Protochain is a game-changer for creating smart contracts. This decentralized app uses advanced AI, specifically the Gemini-2.0-flash LLM, to let you build intricate smart contracts just by describing what you want in plain language. It's incredibly efficient, cutting down the time you'd spend coding by a huge 70%! Protochain even won Electrothon 7.0, showing off its innovative approach. Plus, it's super flexible and secure – you can deploy your contracts across Aptos, Polygon, and Ethereum, and it works seamlessly with popular crypto wallets like Petra and MetaMask. Basically, Protochain makes creating and deploying smart contracts much easier and more versatile for everyone.",
-
-    popupImage: "/products/protochain.png",
-    image: "/products/cpu.png",
-    tech: ["Gemini", "Metamask", "Etherium", "React" , "ShadCN"],
-    status: ["Completed" , "Electrothon - 7" , "Gemini Track Prize "],
-  },
-  {
-    id: 5,
-    name: "Nodejs",
-    liveurl: "https://nodejs.org/en",
-    githuburl: "https://github.com/nodejs/nodejs.org/pull/7750#issue-3065327752",
-    description:
-      "  Moved hardcoded OS, installation methods, and package manager labels from downloadUtils.tsx to a separate downloadConstants.json file for better maintainability. Updated the utility to import and use data from JSON without changing existing behavior.",
-    popupImage: "/products/nodejs.png",
-    image: "/products/nodejsIcon.png",
-    tech: [
-      "Node.js",
-      "JavaScript",
-     
-    ],
-    status: ["Merged",],
-  },
-  {
-    id: 6,
-    name: "Brie ",
-    liveurl: "https://brie.io/",
-    docs : "https://www.notion.so/vishalk988/Brie-Contribution-20e8a65a4851814897cdf9764e564aba?source=copy_link",
-    githuburl: "https://github.com/briehq/brie-extension/pulls?q=is%3Apr+is%3Aclosed+author%3AVishal-K-988",
-    description:
-      `- Reduced local system resource usage during the build and compilation process.
-- Enabled specific limits for developers in development mode.
-- Added device and OS version tracking for both Chromium and non-Chromium browsers.
-- Implemented support for dark mode.`,
-    popupImage: "/products/Brie.png",
-    image: "/products/BrieIcon.png",
-    tech: [
-      "Node.js",
-      "Next.Js",
-      "Turborepo", 
-      "Typescript",
-      "Vite", 
-      "Polyfills"
-
-    ],
-    status: ["Merged",],
-  },
-   {
-    id: 7,
-    name: "Catalyst",
-    liveurl: "https://zohoassignement-60051334413.catalystserverless.in",
-    docs : "https://github.com/Vishal-K-988/zoho-task-manager",
-    githuburl: "https://github.com/Vishal-K-988/zoho-task-manager",
-    description:
-      `- This was an Full Stack Developer assignment. 
-       - Features of this application are : 
-        1. User specific task : as all the task is stored in CATALYST DATA STORE and given user specific permission . 
-        2. Live Task Update 
-        3. Search for a particular task : Pending , Done , Completed! 
-        4. User Authentication  : The cool part ! Done this using their by their own HOSTED AUTHENTICATION feature. 
-
-       - Where I need to develop a task manager application using these tech stack : 
-        1. Zoho Catalyst 
-        2. Host this application via Zoho Web Hosting 
-        3. Zoho serverless Functions in order to make the REST API and create the logic for the backend. 
-        4. React Js 
-       `,
+      "A full-stack task management system built using serverless architecture. Includes secure authentication and REST APIs for task CRUD operations.",
     popupImage: "/products/catalyst.png",
     image: "/products/catalyst-icon.png",
     tech: [
-      "Catalyst",
-      "React",
-      "Express",
-      "Tailwind"
-
+      "Zoho Catalyst",
+      "React.js",
     ],
-    status: ["Completed",],
+    status: ["Completed"],
+  },
+  {
+    id: 3,
+    name: "KAKA Shop Manager",
+    liveurl: "https://kaka-shop.vercel.app/",
+    githuburl: "https://github.com/ihimanshu07/KAKA_SHOP",
+    description:
+      "A scalable shop management system with OAuth authentication and JWT-based sessions. Supports inventory and product management using Prisma ORM and PostgreSQL.",
+    popupImage: "/products/kaka-shop-manager.jpg",
+    image: "/products/kaka-shop-manager.jpg",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "OAuth",
+      "JWT",
+    ],
+    status: ["Completed"],
   },
 ];

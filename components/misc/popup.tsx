@@ -71,12 +71,21 @@ export default function ProjectPopup({ name, liveurl, githuburl, docs, video ,  
               alt={`Preview of ${name}`}
               width={600}
               height={350}
+              onError={(e) => {
+                console.error('Image failed to load:', popupImage);
+                setLoading(false);
+                // Fallback to a placeholder or existing image
+                const target = e.target as HTMLImageElement;
+                if (target) {
+                  target.style.display = 'none';
+                }
+              }}
+              onLoad={() => setLoading(false)}
               className={cn(
                 "rounded-md border shadow-sm object-cover w-full max-h-60 transition-opacity duration-300",
                 loading ? "opacity-0" : "opacity-100"
               )}
               unoptimized={popupImage.endsWith('.gif')}
-              onLoadingComplete={() => setLoading(false)}
             />
           )}
         </div>

@@ -3,6 +3,7 @@ import '@/app/styles/globals.css'
 import { ThemeProvider } from "@/components/misc/theme-provider";
 import { description, image, seo, title, url } from "./data";
 import { Analytics } from "@vercel/analytics/next"
+import TwinklingStars from "@/components/misc/twinkling-stars";
 
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <TwinklingStars />
           {children}
           <Analytics />
         </ThemeProvider>
